@@ -5,7 +5,7 @@ import warnings
 from PIL import Image
 warnings.filterwarnings("ignore")
 
-st.title("Depression Detector")
+st.title("Detecting Depression")
 img = Image.open("depression.png")
 st.image(img, width=350)
 st.markdown("""Depression is a common and serious medical illness 
