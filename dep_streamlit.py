@@ -6,7 +6,7 @@ from PIL import Image
 warnings.filterwarnings("ignore")
 
 st.title("Depression Detector")
-img = Image.open(".\depression.png")
+img = Image.open("depression.png")
 st.image(img, width=350)
 st.markdown("""Depression is a common and serious medical illness 
              that negatively affects how a person feels, the way a person thinks and how a person acts.
