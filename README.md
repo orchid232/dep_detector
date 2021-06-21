@@ -1,1 +1,1 @@
-# dep_detector
+# Detecting Depression
