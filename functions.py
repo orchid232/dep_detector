@@ -10,10 +10,8 @@ nltk.download('stopwords')
 nltk.download('punkt')
 import preprocessor as p
 import pickle
-import warnings
-warnings.filterwarnings("ignore")
 
-clist =  pd.read_json('.\eng_contractions.txt', typ='series')
+clist =  pd.read_json('eng_contractions.txt', typ='series')
 clist = clist.to_dict()
 
 c_re = re.compile('(%s)' % '|'.join(clist.keys()))
