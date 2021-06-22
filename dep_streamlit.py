@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 st.title("Detecting Depression")
 img = Image.open("depression.png")
 st.image(img, width=350)
-main_bg = "dep.jpg"
+main_bg = "dep1.jpg"
 main_bg_ext = "jpg"
 
 st.markdown(
