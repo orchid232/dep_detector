@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 from functions import *
 import warnings
+
 from PIL import Image
 warnings.filterwarnings("ignore")
 
@@ -11,11 +12,12 @@ st.image(img, width=350)
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://unsplash.com/photos/eAkjzXCU0p0");
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
 background-size: cover;
 }
 </style>
 '''
+
 st.markdown(page_bg_img, unsafe_allow_html=True)
 st.markdown("""Depression is a common and serious medical illness 
              that negatively affects how a person feels, the way a person thinks and how a person acts.
