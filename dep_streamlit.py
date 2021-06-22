@@ -9,20 +9,7 @@ warnings.filterwarnings("ignore")
 st.title("Detecting Depression")
 img = Image.open("depression.png")
 st.image(img, width=350)
-main_bg = "dep1.jpg"
-main_bg_ext = "jpg"
 
-st.markdown(
-    f"""
-    <style>
-    .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()}) no-repeat center center fixed; 
-        background-size: cover;
-    }}
-        </style>
-    """,
-    unsafe_allow_html=True
-)
 st.markdown("""Depression is a common and serious medical illness 
              that negatively affects how a person feels, the way a person thinks and how a person acts.
              Early detection of Depression is better for complete cure.
