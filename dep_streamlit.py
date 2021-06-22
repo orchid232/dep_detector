@@ -2,23 +2,26 @@ import streamlit as st
 import numpy as np
 from functions import *
 import warnings
-
+import base64
 from PIL import Image
 warnings.filterwarnings("ignore")
 
 st.title("Detecting Depression")
 img = Image.open("depression.png")
 st.image(img, width=350)
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-background-size: cover;
-}
-</style>
-'''
+main_bg = "dep.jpg"
+main_bg_ext = "jpg"
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(
+    f"""
+    <style>
+    .reportview-container {{
+        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+    }}
+        </style>
+    """,
+    unsafe_allow_html=True
+)
 st.markdown("""Depression is a common and serious medical illness 
              that negatively affects how a person feels, the way a person thinks and how a person acts.
              Early detection of Depression is better for complete cure.
